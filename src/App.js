@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
 
@@ -22,11 +22,23 @@ class App extends Component {
       ]
     }
   }
+
+  componentDidMount() {
+    fetch('https://postman-echo.com/get', {
+        mode: 'cors',
+        headers: {
+          'Access-Control-Allow-Origin':'*'
+        }
+      }
+    )
+    .then(response => console.log(response))
+  }
+
   render() {
     return (
       <div className='App'>
         {
-          this.state.cakes.map(cake => <h1>{cake.name}</h1>)
+          this.state.cakes.map(cake => <h1 key={cake.id}>{cake.name}</h1>)
         }
       </div>
     )
