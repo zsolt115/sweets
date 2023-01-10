@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "cakes": [
+    {
+      "name": "cheesecake",
+      "id": "413158",
+      "flavour": "apple"
+    },
+    {
+      "name": "tiramisu",
+      "id": "413157",
+      "flavour": "coffee"
+    },
+    {
+      "name": "chocolate cake",
+      "id": "413156",
+      "flavour": "chocolate"
+    },
+    {
+      "name": "vanilla cake",
+      "id": "413155",
+      "flavour": "vanilla"
+    },
+    {
+      "name": "raspberry cake",
+      "id": "413159",
+      "flavour": "raspberry"
+    },
+    {
+      "name": "blueberry cake",
+      "id": "8918",
+      "flavour": "blueberry"
+    }
+  ]
+}
